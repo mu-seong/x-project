@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+  <title>WEB1 - HTML</title>
+  <meta charset="utf-8">
+  <style>
+    a {
+      color:black;
+      text-decoration: none;
+    }
+    h1 {
+      font-size: 45px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:15px;
+    }
+    #grid ol {
+      border-right:1px solid gray;
+      width:100px;
+      margin-top:0;
+      margin-left:10px;
+      padding:10px;
+    }
+    body {
+      margin:0;
+    }
+    #active{
+      color:red;
+    }
+    .saw {
+      color:gray;
+    }
+    #grid {
+      display:grid;
+      grid-template-columns:150px 1fr;
+    }
+    #article {
+      padding:20px;
+    }
+    @media(max-width:800px){
+      #grid {
+        display:block;
+        }
+      #grid ol {
+        border-right:none;
+        }
+      h1 {
+        border-bottom:none;
+        }
+      }
+  </style>
+</head>
+<body>
+  <h1><a href="index.html">WEB</a></h1>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html" class="saw">HTML</a></li>
+      <li><a href="2.html" class="saw" id="active">CSS</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+    </ol>
+<!--
+  <h1><a href="index.html"><font color='red'>WEB</font></a></h1>
+  <ol>
+    <li><a href="1.html"><font color='red'>HTML</font></a></li>
+    <li><a href="2.html"><font color='green'>CSS</font></a></li>
+    <li><a href="3.html"><font color='blue'>JavaScript</font></a></li>
+  </ol>
+-->
+<!--
+  <ul>
+    <li>무성</li>
+    <li>무셔</li>
+    <li>에단</li>
+  </ul>
+-->
+  <div id="article">
+    <h2>HTML이란 무엇인가?</h2>
+    <strong><u>hello</u> <u>web</u></strong> made by 무성
+    <p>This <a href="https://www.w3.org/TR/2011/WD-html5-20110405/"
+      target="_blank" title="html5 speicification">HTML usage data</a> comes from 7.1 million index pages gathered from top twenty Google results, for about 30 million keywords - chosen by keyword volume.</p>
+      <img src="알파프로젝트.jpg" width="100%"><p style="margin-top:100px;">To learn more about this data, visit the FAQ section.</p>
+  </div>
+  </div>
+</body>
+</html>
