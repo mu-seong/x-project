@@ -68,7 +68,7 @@ h1 {
   padding-right: 0;
 }
 
-.sen {
+.cen {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
@@ -90,8 +90,8 @@ path {
 
 img {
   position: fixed;
-  z-index: -1;
-  top: 50%;
+  z-index: 0;
+  top: 60%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
