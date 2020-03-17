@@ -1,0 +1,329 @@
+  header {
+    text-align: center;
+  }
+  .bar {
+    border-bottom: 1px solid gray;
+  }
+  h1 {
+    position: absolute;
+    left: 50px;
+    top: 22px;
+  }
+  .menu {
+    text-align: center;
+  }
+  .menu li {
+    display: inline-block;
+  }
+  .menu li a {
+    display: block;
+    height: 81px;
+    padding: 0 35px;
+    font-size: 17px;
+    color: #333;
+    line-height: 81px;
+  }
+  .menu li a:hover {
+    color: #2d5b79;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  .spot {
+    position: absolute;
+    right: 50px;
+    top: 0;
+  }
+  .spot li {
+    float: left;
+  }
+  .spot li:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 1px;
+    height: 7px;
+    background: #ccc;
+    transform: translateY(-50%);
+  }
+  .spot li a {
+    display: block;
+    height: 81px;
+    padding: 0 10px;
+    line-height: 81px;
+  }
+  .spot li:last-child a {
+    padding-right: 0;
+  }
+
+<!-- 학회소개 -->
+  .fraction{
+    width:50%;
+    text-align:right;
+    float:left;
+  }
+  .text{
+    text-align:right;
+    padding-right:25px;
+    float:right;
+  }
+  .logo{
+    width:40%;
+    float:left;
+    text-align:left;
+    padding-left:2%;
+  }
+
+<!-- 교수님소개 -->
+  .h1_pro{
+    font-size:28px;
+    text-align: left;
+    padding:15px;
+  }
+  .d_pro a{
+    text-align: right;
+    font-size:23px;
+    border-right:2px solid red;
+    padding-right: 15px;
+  }
+  .b_pro{
+    text-align: right;
+    font-size:23px;
+    border-right:2px solid yellow;
+    padding-right: 15px;
+  }
+  .c_pro{
+    text-align: right;
+    font-size:23px;
+    border-right:2px solid green;
+    padding-right: 15px;
+  }
+  .d_pro{
+    text-align: center;
+    font-size: 20px;
+    color: gray;
+  }
+  .grid_pro{
+    display:grid;
+    grid-template-columns: 200px 1fr;
+  }
+
+<!-- 임원진소개 -->
+  .one
+  {
+    width:25%;
+    margin-left:6%;
+    padding:1%;
+    float:left;
+    margin-top:10%;
+  }
+  .two
+  {
+    width:25%;
+    margin-left:6%;
+    padding:1%;
+    float:left;
+    margin-top:10%;
+  }
+  .three
+  {
+    width: 25%;
+    margin-left:6%;
+    padding:1%;
+    float:left;
+    margin-top:10%;
+  }
+
+<!-- history -->
+  @import url(https://fonts.googleapis.com/css?family=Raleway:300);
+  *,
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .accordion {
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  .accordion-item {
+    position: relative;
+  }
+  .accordion-item.active .heading {
+    color: #6e6e6e;
+  }
+  .accordion-item.active .icon {
+    background: #6e6e6e;
+  }
+  .accordion-item.active .icon:before {
+    background: #e6e6e6;
+  }
+  .accordion-item.active .icon:after {
+    width: 0;
+  }
+  .accordion-item .heading {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #1c1c1c;
+    font-weight: 700;
+    font-size: 1rem;
+    position: relative;
+    padding: 1.5rem 1.5rem 1.5rem 4rem;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  @media (min-width: 40rem) {
+    .accordion-item .heading {
+      font-size: 1.2rem;
+    }
+  }
+  .accordion-item .heading:hover {
+    color: #1c1c1c;
+  }
+  .accordion-item .heading:hover .icon:before, .accordion-item .heading:hover .icon:after {
+    background: #1c1c1c;
+  }
+  .accordion-item .icon {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid #1c1c1c;
+    border-radius: 3px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .accordion-item .icon:before, .accordion-item .icon:after {
+    content: '';
+    width: 1.25rem;
+    height: 0.25rem;
+    background: #1c1c1c;
+    position: absolute;
+    border-radius: 3px;
+    left: 50%;
+    top: 50%;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .accordion-item .icon:after {
+    -webkit-transform: translate(-50%, -50%) rotate(90deg);
+            transform: translate(-50%, -50%) rotate(90deg);
+    z-index: -1;
+  }
+  .accordion-item .content {
+    display: none;
+  }
+  .accordion-item .content p {
+    margin-top: 0;
+    margin-left: 6%;
+    color: #1c1c1c;
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  @media (min-width: 40rem) {
+    .accordion-item .content {
+      line-height: 1.75;
+    }
+  }
+
+<!-- 스크롤 -->
+  .scroll {
+    margin: 0;
+  }
+
+  .scroll-container {
+    height: 100vh;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+  }
+
+  .scroll-item {
+    position: relative;
+    height: 100vh;
+    scroll-snap-align: center;
+    justify-content: center;
+    background-color: #e6e6e6;
+  }
+
+  .scroll-item h2 {
+    position: sticky;
+    top: 10px;
+    margin: 10px;
+    padding: 1rem;
+    float: left;
+    color: #1c1c1c;
+    z-index: 1;
+  }
+
+  .scroll-item__content {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  .scroll-item__content_1 {
+    box-sizing:border-box;
+    display:block;
+    text-align:center;
+    height: 100vh;
+    font-size: 1.2rem;
+  }
+
+  .scroll-item__content_2 {
+    box-sizing:border-box;
+    display:block;
+    text-align:center;
+    height: 100vh;
+    font-size: 1.2rem;
+  }
+
+  .scroll-item__content_3 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+  }
+
+
+  .scroll-item_4 h2 {
+    position: sticky;
+    top: 10px;
+    margin: 10px;
+    padding: 1rem;
+    float: left;
+    color: #1c1c1c;
+    z-index: 1;
+  }
+  .scroll-item_4 {
+    position: relative;
+    height: 100vh;
+    scroll-snap-align: center;
+    justify-content: center;
+    background-color: #e6e6e6;
+  }
+  .scroll-item__content_4 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    font-size: 1.2rem;
+  }
+
+  .scroll-item__inner {
+    border: 2px solid white;
+    padding: 1rem;
+    transition: opacity 800ms, transform 800ms;
+    opacity: 0;
+    transform: translate3d(0, -1.5rem, 0);
+  }
+  .scroll-item__inner.is-visible {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
