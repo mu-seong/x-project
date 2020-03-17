@@ -131,103 +131,116 @@
   }
 
 <!-- history -->
-  @import url(https://fonts.googleapis.com/css?family=Raleway:300);
-  *,
-  *:before,
-  *:after {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  .accordion {
-    width: 100%;
-    max-width: 75rem;
-    margin: 0 auto;
-    padding: 2rem;
-  }
-  .accordion-item {
-    position: relative;
-  }
-  .accordion-item.active .heading {
-    color: #6e6e6e;
-  }
-  .accordion-item.active .icon {
-    background: #6e6e6e;
-  }
-  .accordion-item.active .icon:before {
-    background: #e6e6e6;
-  }
-  .accordion-item.active .icon:after {
-    width: 0;
-  }
-  .accordion-item .heading {
-    display: block;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #1c1c1c;
-    font-weight: 700;
-    font-size: 1rem;
-    position: relative;
-    padding: 1.5rem 1.5rem 1.5rem 4rem;
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-  }
-  @media (min-width: 40rem) {
-    .accordion-item .heading {
-      font-size: 1.2rem;
-    }
-  }
-  .accordion-item .heading:hover {
-    color: #1c1c1c;
-  }
-  .accordion-item .heading:hover .icon:before, .accordion-item .heading:hover .icon:after {
-    background: #1c1c1c;
-  }
-  .accordion-item .icon {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 3rem;
-    height: 3rem;
-    border: 2px solid #1c1c1c;
-    border-radius: 3px;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
-  .accordion-item .icon:before, .accordion-item .icon:after {
-    content: '';
-    width: 1.25rem;
-    height: 0.25rem;
-    background: #1c1c1c;
-    position: absolute;
-    border-radius: 3px;
-    left: 50%;
-    top: 50%;
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-  }
-  .accordion-item .icon:after {
-    -webkit-transform: translate(-50%, -50%) rotate(90deg);
-            transform: translate(-50%, -50%) rotate(90deg);
-    z-index: -1;
-  }
-  .accordion-item .content {
-    display: none;
-  }
-  .accordion-item .content p {
-    margin-top: 0;
-    margin-left: 6%;
-    color: #1c1c1c;
-    font-weight: 700;
-    font-size: 1.1rem;
-  }
-  @media (min-width: 40rem) {
-    .accordion-item .content {
-      line-height: 1.75;
-    }
-  }
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+body .tab {
+  position: relative;
+  font-family: 'Oswald', sans-serif;
+  background: #303F9F;
+  color: #fff;
+  font-size: 20px;
+}
+
+.grid {
+  list-style: none;
+  margin-left: -40px;
+}
+
+.gc {
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: -.25em;
+  min-height: 1px;
+  padding-left: 40px;
+  vertical-align: top;
+}
+
+.gc--1-of-3 {
+  width: 33.33333%;
+}
+
+.gc--2-of-3 {
+  width: 66.66666%;
+}
+
+.naccs {
+  position: relative;
+  margin-top: 13%;
+}
+
+.naccs .menu div {
+  padding: 15px 20px 15px 40px;
+  margin-bottom: 10px;
+  margin-left: 10%;
+  width: 50%;
+  color: #303F9F;
+  background: #3F51B5;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: relative;
+  vertical-align: middle;
+  font-weight: 700;
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.naccs .menu div:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.naccs .menu div span.light {
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  top: 24px;
+  left: 15px;
+  background-color: #303F9F;
+  border-radius: 100%;
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.naccs .menu div.active span.light {
+  background-color: #FBC02D;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  top: 0;
+  border-radius: 0;
+}
+
+.naccs .menu div.active {
+  color: #FBC02D;
+  padding: 15px 20px 15px 20px;
+}
+
+ul.nacc {
+  position: relative;
+  height: 0px;
+  list-style: none;
+  margin-left: -10%;
+  padding: 0;
+  transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+ul.nacc li {
+  opacity: 0;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  position: absolute;
+  list-style: none;
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+ul.nacc li.active {
+  transition-delay: .3s;
+  z-index: 2;
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+ul.nacc li p {
+  margin: 0;
+}
+
 
 <!-- 스크롤 -->
   .scroll {
@@ -289,12 +302,9 @@
   }
 
   .scroll-item__content_4 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    display: flow-root;
     height: 100vh;
-    text-align: center;
+    text-align: left;
     font-size: 1.2rem;
   }
 

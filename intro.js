@@ -1,22 +1,19 @@
-$('.accordion-item .heading').on('click', function(e) {
-    e.preventDefault();
+// Acc
+$(document).on("click", ".naccs .menu div", function() {
+	var numberIndex = $(this).index();
 
-    // Add the correct active class
-    if($(this).closest('.accordion-item').hasClass('active')) {
-        // Remove active classes
-        $('.accordion-item').removeClass('active');
-    } else {
-        // Remove active classes
-        $('.accordion-item').removeClass('active');
+	if (!$(this).is("active")) {
+		$(".naccs .menu div").removeClass("active");
+		$(".naccs ul li").removeClass("active");
 
-        // Add the active class
-        $(this).closest('.accordion-item').addClass('active');
-    }
+		$(this).addClass("active");
+		$(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
 
-    // Show the content
-    var $content = $(this).next();
-    $content.slideToggle(100);
-    $('.accordion-item .content').not($content).slideUp('fast');
+		var listItemHeight = $(".naccs ul")
+			.find("li:eq(" + numberIndex + ")")
+			.innerHeight();
+		$(".naccs ul").height(listItemHeight + "px");
+	}
 });
 
 
