@@ -1,0 +1,65 @@
+#menuTopBar{
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  border-bottom: 1px solid gainsboro;
+  box-shadow: 1px 1px 10px gray;
+}
+.areaLogo{
+  position: absolute;
+  left: 0;
+  width: 165px;
+  padding-left: 30px;
+}
+.areaLogo h1{
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 5px;
+  margin-block-start: 17px;
+  color: black;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.menuList{
+  position: absolute;
+  /*left: 25%;*/
+  margin-left: 290px;
+  width: 700px;
+}
+.menuList ul li{
+  float: left;
+  width: 20%;
+  text-align: center;
+  margin-top: 12px;
+}
+.menuList li a:hover{
+  font-weight: bold;
+  text-decoration: underline;
+  color: #424242;
+}
+.optionMenu{
+  position: absolute;
+  margin-right: 30px;
+  right: 0;
+  padding: 6px;
+  width: 200px;
+}
+.optionMenu li{
+  float: left;
+  /*width: 50%;*/
+  width: 33.3%;
+  text-align: center;
+  margin-top: 23px;
+  color: #424242;
+  font-size: 13px;
+}
+.optionMenu li a:hover{
+  font-weight: bold;
+  text-decoration: underline;
+  color: #424242;
+}

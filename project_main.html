@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-Project_Main</title>
+    <link rel="stylesheet" href="menuTopBar.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+        display: block;
+        font-family:'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+      }
+      .container{
+        position: absolute;
+      }
+
+      /* ############################
+        프로젝트 메인화면 좌측 사이드바
+        ############################# */
+      .overlay{
+        background-color: white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        width: 0;
+        height: 100%;
+        transition: .5s ease;
+        border-right: 0.3px solid #E6E6E6;
+      }
+      .container:hover .overlay{
+        width: 12%;
+      }
+      .years{
+        position: absolute;
+        top: 35%;
+        left: 55%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+      }
+      .years ul{
+        list-style: none;
+      }
+      .years a{
+        font-size: 23px;
+        color: #3e4142;
+        font-weight: bold;
+        line-height: 45px;
+        padding-right: 60px;
+      }
+      .years a:link{
+        color: black;
+        text-decoration: none;
+      }
+      .years a:hover{
+        color: #242626;
+        font-size: 26px;
+        text-shadow: 2px 2px 2px gray;
+      }
+
+      /* ###############
+        프로젝트 메인화면
+        ################ */
+      .introImg{
+        width: 100%;
+      }
+      .introMsg{
+        position: absolute;
+        top: 30%;
+        left: 17%;
+        width: 70%;
+        transition: .5s ease;
+      }
+      .container:hover .introMsg{
+        left: 21%;
+        transition: .5s ease;
+      }
+      .introMsg h3{
+        font-size: 50px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        margin-top: 5px;
+        text-shadow: 1px 1px 5px #2E2E2E;
+      }
+      .introMsg p{
+        font-size: 17px;
+        color: white;
+        text-align: center;
+        line-height: 27px;
+        margin-bottom: 20px;
+        text-shadow: 1px 1px 6px #2E2E2E;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--상단 메뉴바-->
+    <nav id="menuTopBar">
+      <div class="areaLogo">
+        <h1>X-Ville</h1>
+      </div>
+      <div class="menuList">
+        <ul>
+          <li><a href="">소개</a></li>
+          <li><a href="">멤버</a></li>
+          <li><a href="project_main.html">프로젝트</a></li>
+          <li><a href="">갤러리</a></li>
+          <li><a href="">트렌드</a></li>
+        </ul>
+      </div>
+      <div class="optionMenu">
+        <li><a href="">sitemap</a></li>
+        <li>|</li>
+        <li><a href="">contact us</a></li>
+      </div>
+    </nav>
+
+    <nav id="container" class="container">
+      <!--좌측 메뉴바-->
+      <div class="overlay">
+        <div class="years">
+          <ul>
+            <li><div class="year"><a href="2015_project.html">2015</a></div></li>
+            <li><div class="year"><a href="2016_project.html">2016</a></div></li>
+            <li><div class="year"><a href="2017_project.html">2017</a></div></li>
+            <li><div class="year"><a href="2018_project.html">2018</a></div></li>
+            <li><div class="year"><a href="2019_project.html">2019</a></div></li>
+            <li><div class="year"><a href="2020_project.html">2020</a></div></li>
+          </ul>
+        </div>
+      </div>
+
+      <!--프로젝트 메인화면-->
+    <div class="contents">
+      <img src="background.png" class="introImg" alt="프로젝트 메인화면">
+      <div class="introMsg">
+        <h3>X-PROJECT</h3>
+        <p>X-Ville의 프로젝트는 제품과의 상호작용에서 제공되는 사용성(usability),<br>
+          유용성(usefulness) 및 만족도(desirability)를 살펴 사용자 경험에 맞춘 설계를 진행합니다.<br>
+          이러한 경험적 설계는 산업 간 융합으로 변화하는 초연결 사회에서 사용자의 삶에 몰입하고,<br>
+          유래 없는 혁신적인 제품과 서비스를 창조하는 미래 통찰적인 프로젝트를 추구합니다.</p>
+      </div>
+    </div>
+    </nav>
+  </body>
+</html>
