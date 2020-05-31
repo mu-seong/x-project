@@ -63,3 +63,27 @@ a{
   text-decoration: underline;
   color: #424242;
 }
+
+
+
+
+
+
+
+@media(max-width: 1599px) {
+  .cut {
+    width: 1520px;
+  }
+}
+
+@media(min-width: 1600px) and (max-width: 1699px) {
+  .cut {
+    width: 1600px;
+  }
+}
+
+@media(min-width: 1700px) {
+  .cut {
+    width: 1700px;
+  }
+}
