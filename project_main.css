@@ -160,20 +160,20 @@ body{
   }
 }
 
-@media(min-width: 1600px) and (max-width: 1699px) {
+@media(min-width: 1600px) and (max-width: 1799px) {
   .cut {
-    width: 1600px;
+    width: 1700px;
   }
   .introImg{
-    width: 1600px;
+    width: 1700px;
   }
 }
 
-@media(min-width: 1700px) {
+@media(min-width: 1800px) {
   .cut {
-    width: 1700px;
+    width: 1900px;
   }
   .introImg{
-    width: 1700px;
+    width: 1900px;
   }
 }

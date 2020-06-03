@@ -121,7 +121,7 @@ a.now{
 
 
 
-
+/*화면 크기 */
 @media(max-width: 1599px) {
   .cut {
     width: 1520px;
@@ -131,20 +131,20 @@ a.now{
 }
 }
 
-@media(min-width: 1600px) and (max-width: 1699px) {
-  .cut {
-    width: 1600px;
-  }
-  header .bar {
-   width: 1600px;
-}
-}
-
-@media(min-width: 1700px) {
+@media(min-width: 1600px) and (max-width: 1799px) {
   .cut {
     width: 1700px;
   }
   header .bar {
    width: 1700px;
+}
+}
+
+@media(min-width: 1800px) {
+  .cut {
+    width: 1900px;
+  }
+  header .bar {
+   width: 1900px;
 }
 }
