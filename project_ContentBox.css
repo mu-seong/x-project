@@ -1,0 +1,80 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.contentYear p{
+  color: black;
+  letter-spacing: -.1px;
+  text-align: left;
+  padding-top: 40px;
+  font-size: 55px;
+  font-style: normal;
+}
+.contentBox{
+  /*background-color: skyblue;*/
+  margin-left: 5%; /*좌측 사이드바 나오는 공간 여유두기*/
+  height: 100%;
+  /*margin-top: 100px;*/
+}
+.contentBox_wide{
+  /*background-color: pink;*/
+  float: left;
+  width: 100%;
+  padding: 20px 0 35px;
+  border-bottom: 1px solid #efefef;
+}
+.contentBox_left{
+  /*background-color: palegoldenrod;*/
+  /*width: calc(60% - 30px);*/
+  float: left;
+  width: calc(60%);
+  border-left: 40px;
+}
+.contentBox_right{
+  margin-top: 30px;
+  float: right;
+  width: calc(40%);
+  /*background-color: purple;*/
+}
+.contentBox_right_img{
+  padding-left: 17%;
+}
+.contentBox_right_img img{
+  width: 80%;
+  box-shadow: 5px 5px 5px #606167;
+}
+.contentBox_title{ /*프로젝트 주제*/
+  /*background-color: yellowgreen;*/
+  margin-top: 20px;
+  font-size: 40px;
+  color: black;
+}
+.contentBox_smallTitle{
+  /*margin: 0 0 25px;*/
+  font-size: 27px;
+  font-family: "NanumSquare";
+  color: #424242;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -.1px;
+  padding: 0;
+  margin-top: 12px;
+}
+.contentBox_info{ /*프로젝트 설명*/
+  margin-top: 40px;
+  margin-bottom: 40px;
+  /*background-color: yellow;*/
+  /*content: '';
+  display: block;
+  clear: both;*/
+}
+.info_text_more summary{ /*프로젝트 설명 '더보기'*/
+  font-size: 15px;
+}
+.info_text_more p{
+  font-size: 18px;
+  font-family: "NanumSquare";
+  color: #606167;
+  line-height: 1.8;
+  letter-spacing: -.1px;
+  padding: 0;
+}
