@@ -428,27 +428,35 @@ ul.nacc li p {
 
   @media(min-width: 1800px) {
     .cut {
-      width: 2000px;
+      width: 1900px;
     }
 
     header .bar {
-     width: 2000px;
+     width: 1900px;
+   }
+
+   .scroll-item__content_1 {
+     padding-left: 120px;
+   }
+
+   .scroll-item__content_2 {
+     padding-left: 120px;
    }
 
    .schp_pro{
-    width: 800px;
+    width: 1000px;
   }
 
   .yp_pro{
-    width: 800px;
+    width: 1000px;
   }
 
   .intp_pro{
-    width: 800px;
+    width: 1000px;
   }
 
   .morep_pro{
-    width: 800px;
+    width: 1000px;
   }
 }
 /*
