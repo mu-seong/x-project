@@ -1,65 +1,64 @@
-  header {
-    text-align: center;
-  }
-  header .bar {
-    border-bottom: 1px solid gray;
-  }
-  header h1 {
-    position: absolute;
-    left: 50px;
-    top: 22px;
-  }
-  header .menu {
-    text-align: center;
-  }
-  header .menu li {
-    display: inline-block;
-  }
-  header .menu li a {
-    display: block;
-    height: 81px;
-    padding: 0 35px;
-    font-size: 17px;
-    color: #333;
-    line-height: 81px;
-  }
-  header .menu li a:hover {
-    color: #2d5b79;
-    font-weight: bold;
-    text-decoration: underline;
-  }
-  header .spot {
-    position: absolute;
-    right: 50px;
-    top: 0;
-  }
-  header .spot li {
-    float: left;
-  }
-  header .spot li:after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 1px;
-    height: 7px;
-    background: #ccc;
-    transform: translateY(-50%);
-  }
-  header .spot li a {
-    display: block;
-    height: 81px;
-    padding: 0 10px;
-    line-height: 81px;
-  }
-  header .spot li:last-child a {
-    padding-right: 0;
-  }
+header {
+ text-align: center;
+}
+header .bar {
+ /*position:fixed;*/
+ /*width: 1000px;*/
+ height: 80px;
+ background-color: white;
+ border-bottom: 1px solid gainsboro;
+ box-shadow: 1px 1px 10px gray;
+}
+header a{
+ color:black;
+ text-decoration: none;
+}
+header h1 {
+ float:left;
+ margin-left: 30px;
+ margin-top:25px;
+ font-size:30px;
+}
+header .menu {
+ display:inline-block;
+  text-align: center;
+}
+header .menu li {
+  display: inline-block;
+}
+header .menu li a {
+ display: block;
+ height: 65px;
+ padding: 0 35px;
+ font-size: 17px;
+ color: #333;
+ line-height: 65px;
+}
+header .menu li a:hover {
+  color: #2d5b79;
+  font-weight: bold;
+ text-decoration: underline;
+}
+header .spot {
+ float:right;
+ right: 50px;
+ top: 0;
+}
+header .spot li {
+  float: left;
+  list-style: none;
+}
+header .spot li a {
+  display: block;
+  height: 65px;
+  padding: 0 10px;
+  line-height: 65px;
+}
+/* 여기까지 menuTopBar */
 
 
 
-
-
+/*학회 소개*/
   .fraction{
     float:left;
     padding-left: 80px;
@@ -77,17 +76,18 @@
     text-align:left;
     padding-left: 15px;
   }
+/*학회 소개*/
 
 
 
-
-
+/*교수님 소개*/
 .image_pro{
   float:left;
   margin-left: 50px;
   margin-top: 25px;
   padding:1px;
 }
+
 .sch_pro{
   float:left;
   text-align: center;
@@ -97,6 +97,7 @@
   border-right:2px solid black;
   color: #000000;
 }
+
 .schp_pro{
   float:left;
   margin-top: 35px;
@@ -105,6 +106,7 @@
   padding-left:40px;
   color: #000000;
 }
+
 .y_pro{
   float:left;
   text-align: center;
@@ -114,6 +116,7 @@
   border-right:2px solid #444444;
   color: #000000;
 }
+
 .yp_pro{
   float:left;
   margin-top: 40px;
@@ -122,6 +125,7 @@
   padding-left:40px;
   color: #000000;
 }
+
 .int_pro{
   float:left;
   text-align: center;
@@ -132,6 +136,7 @@
   border-right:2px solid #888888;
   color: #000000;
 }
+
 .intp_pro{
   float:left;
   margin-top: 40px;
@@ -141,6 +146,7 @@
   padding-left:40px;
   color: #000000;
 }
+
 .more_pro{
   float:left;
   text-align: center;
@@ -149,8 +155,9 @@
   height: 30px;
   border-right:2px solid #AAAAAA;
   color: #000000;
-  font-size: 1.2rem;
+  font-size: 20px;
 }
+
 .morep_pro{
   float:left;
   margin-top: 40px;
@@ -159,37 +166,33 @@
   padding-left:40px;
   color: #000000;
 }
+/*교수님 소개*/
 
 
 
-
-
+/*임원진 소개*/
   .one
   {
-    width: 310px;
-    margin-left: 10px;
     float:left;
   }
+
   .two
   {
-    width: 310px;
-    margin-left: 50px;
-    padding: 1px;
-    float:left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
+
   .three
   {
-    width: 310px;
-    margin-left: 110px;
-    padding: 1px;
-    float:left;
+    margin-right: 100px;
+    float:right;
   }
-}
+/*임원진 소개*/
 
 
 
-
-
+/*활동 내역*/
 @import url("https://fonts.googleapis.com/css?family=Oswald");
 body .tab {
   position: relative;
@@ -301,11 +304,11 @@ ul.nacc li.active {
 ul.nacc li p {
   margin: 0;
 }
+/*활동 내역*/
 
 
 
-
-
+/*한 페이지씩 스크롤*/
   .scroll {
     margin: 0;
   }
@@ -382,22 +385,70 @@ ul.nacc li p {
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
+/*한 페이지씩 스크롤*/
 
-@media(max-width: 1599px) {
-  .cut {
-    width: 1520px;
+
+
+  /*화면 크기 */
+  @media(max-width: 1599px) {
+    .cut {
+      width: 1520px;
+    }
+
+    header .bar {
+     width: 1520px;
   }
 }
 
-@media(min-width: 1600px) and (max-width: 1699px) {
-  .cut {
-    width: 1600px;
+  @media(min-width: 1600px) and (max-width: 1799px) {
+    .cut {
+      width: 1700px;
+    }
+
+    header .bar {
+     width: 1700px;
+  }
+
+  .schp_pro{
+    width: 700px;
+  }
+
+  .yp_pro{
+    width: 700px;
+  }
+
+  .intp_pro{
+    width: 700px;
+  }
+
+  .morep_pro{
+    width: 700px;
   }
 }
 
-@media(min-width: 1700px) {
-  .cut {
-    width: 1700px;
+  @media(min-width: 1800px) {
+    .cut {
+      width: 2000px;
+    }
+
+    header .bar {
+     width: 2000px;
+   }
+
+   .schp_pro{
+    width: 800px;
+  }
+
+  .yp_pro{
+    width: 800px;
+  }
+
+  .intp_pro{
+    width: 800px;
+  }
+
+  .morep_pro{
+    width: 800px;
   }
 }
 /*
